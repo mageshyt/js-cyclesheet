@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Resume Generator</h1>
+    <form id="resumeForm">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="education">Education:</label>
+        <textarea id="education" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience:</label>
+        <textarea id="experience" rows="4" required></textarea>
+      </div>
+      <button type="submit">Generate Resume</button>
+    </form>
+    <div id="resumeOutput" class="resume-output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

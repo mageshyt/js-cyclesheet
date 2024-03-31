@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+button {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+}
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.right_img {
+  position: absolute;
+  right: 0;
+}
+.left_img {
+  position: absolute;
+  left: 0;
+}
+
+.bg_img {
+  height: 100%;
+  width: 100%;
+}
+
+.options {
+  gap: 10px;
+  display: flex;
+  margin-top: 16px;
+}
+
+.container {
+  margin-top: 2rem;
+  border: 2px dashed gray;
+  height: 500px;
+  width: 500px;
+  border-radius: 6px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+.text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.edit {
+  display: none;
+  align-items: center;
+}
+
+.options_container {
+  display: hidden;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.position_container {
+  display: none;
+  gap: 10px;
+  margin-top: 10px;
+}
+.edit_text_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit_input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./profile.jpeg" class="greeting_img" />
+      <div class="text">
+        <h1 class="greeting_text">This is Text</h1>
+      </div>
+    </div>
+    <!-- options -->
+    <div class="options">
+      <button>change image</button>
+      <!-- edit text -->
+      <button onclick="setEdit()">Edit text</button>
+
+      <!-- position -->
+      <button class="position_btn" onclick="setPosition()">
+        position image
+      </button>
+      <button>change font size or color</button>
+    </div>
+
+    <div class="edit edit_container">
+      <input placeholder="enter the text to edit" id="edit_text" />
+      <button onclick="handleEdit()">edit</button>
+    </div>
+
+    <div class="position_container">
+      <button class="left_btn" onclick="positionHandler('left')">left</button>
+      <button onclick="positionHandler('right')" class="right_btn">
+        right
+      </button>
+      <button class="bg_btn" onclick="positionHandler('bg')">background</button>
+    </div>
+
+    <div class="edit_text_container">
+      <div class="edit_input">
+        <input type="text" id="edit_font" placeholder="enter the text-font" />
+        <input type="color" id="edit_color" />
+      </div>
+
+      <button onclick="handleEditText()">edit</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
